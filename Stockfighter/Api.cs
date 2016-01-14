@@ -10,21 +10,18 @@ namespace pb8.Stockfighter
     public class Api
     {
         private readonly Uri _apiBaseUri;
-        private readonly string _apiWsUrl;
         private readonly string _apiKey;
 
         public Api(string apiKey)
         {
             _apiKey = apiKey;
             _apiBaseUri = new Uri("https://api.stockfighter.io/ob/api/");
-            _apiWsUrl = "wss://www.stockfighter.io/ob/api/ws/";
         }
 
-        public Api(string apiKey, string apiBaseUrl, string apiWsUrl)
+        public Api(string apiKey, string apiBaseUrl)
         {
             _apiKey = apiKey;
             _apiBaseUri = new Uri(apiBaseUrl);
-            _apiWsUrl = apiWsUrl;
         }
 
         private HttpClient GetHttpClient()

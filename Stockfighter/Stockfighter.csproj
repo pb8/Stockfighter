@@ -52,10 +52,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api.cs" />
+    <Compile Include="GameMaster.cs" />
     <Compile Include="Model\ApiHeartbeat.cs" />
     <Compile Include="Model\BidAsk.cs" />
     <Compile Include="Model\Enums.cs" />
     <Compile Include="Model\Fill.cs" />
+    <Compile Include="Model\LevelDetails.cs" />
+    <Compile Include="Model\LevelStatus.cs" />
     <Compile Include="Model\Order.cs" />
     <Compile Include="Model\Orderbook.cs" />
     <Compile Include="Model\OrderRequest.cs" />

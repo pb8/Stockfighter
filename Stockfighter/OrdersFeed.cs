@@ -20,8 +20,7 @@ namespace pb8.Stockfighter
             _reconnect = reconnect;
         }
 
-        public OrdersFeed(string account, string venue, bool reconnect, string symbol)
-            : this(account, venue, reconnect)
+        public OrdersFeed(string account, string venue, bool reconnect, string symbol) : this(account, venue, reconnect)
         {
             _symbol = symbol;
         }
